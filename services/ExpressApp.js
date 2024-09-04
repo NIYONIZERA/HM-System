@@ -7,7 +7,11 @@ import swaggerUi from 'swagger-ui-express'
 import ErrorHandlerMiddleware from '../middlewares/ErrorHandler.js'
 
 import configurations from "../configs/index.js";
-
+const corsOptions = {
+    allowedHeaders: ["Authorization","Content-Type"],
+    methods: ["GET", "POST", "UPDATE" ,"DELETE"],
+    origin: ["http://localhost:661", configurations.HM-System],
+}
 
 
 
