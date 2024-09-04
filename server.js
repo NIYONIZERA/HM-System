@@ -1,7 +1,7 @@
 import express from "express";
 import configurations from "./configs/index.js";
 import App from './services/ExpressApp.js';
-import connectToMongoDB from './services/Database.js';
+import connectDB from './services/Database.js';
 
 const StartExpressServer = async () => {
     const app = express();
